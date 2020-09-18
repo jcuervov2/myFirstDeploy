@@ -16,6 +16,9 @@
         <div style="display: none;" id="messages" >
             <p></p>
         </div>
+        <div style="display: none;" id="urlTest" >
+            <p></p>
+        </div>
         <div id="bookFrom">
             <hr/>
             <table>
@@ -44,8 +47,13 @@
         //Funciones anonimas 
          $('#loadBooks').click( function () {
   
-             $('#messages').first('p').text(window.location.href + ( window.location.href.substr( window.location.href.length ) - 1) == '/' ? '' : '/' + 'books');
+             $('#messages').first('p').text('Cargando libros...');
              $('#messages').show();
+
+             $('#urlTest').first('p').text(window.location.href);
+             $('#urlTest').show();
+
+             
              /*$.ajax(
                  {
                      'url' : window.location.href + ( window.location.href.substr( window.location.href.length ) - 1) == '/' ? '' : '/' + 'books', 
