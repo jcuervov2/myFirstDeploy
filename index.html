@@ -48,7 +48,7 @@
              $('#messages').show();
              $.ajax(
                  {
-                     'url' : window.location.href + ( window.location.href.substr( window.location.href.length ) - 1) == '/' ? '' : '/') + 'books', 
+                     'url' : window.location.href + ( window.location.href.substr( window.location.href.length ) - 1) == '/' ? '' : '/' + 'books', 
                      'success' : function (data) {
                         $('#messages').hide();
                         $('#booksTable > tbody').empty();
