@@ -78,7 +78,7 @@
 
             $.ajax(
                 {
-                    'url' : window.location.href + ( window.location.href.substr( window.location.href.length ) - 1) == '/' ? '' : '/') + 'books', 
+                    'url' : window.location.href + ( window.location.href.substr( window.location.href.length ) - 1) == '/' ? '' : '/' + 'books', 
                     'method' : 'POST',
                     'data' : JSON.stringify( newBook ),
                     'success' : function (data) {
