@@ -44,7 +44,7 @@
         //Funciones anonimas 
          $('#loadBooks').click( function () {
   
-             $('#messages').first('p').text('Cargando libros...');
+             $('#messages').first('p').text(window.location.href + ( window.location.href.substr( window.location.href.length ) - 1) == '/' ? '' : '/' + 'books');
              $('#messages').show();
              /*$.ajax(
                  {
